@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6879862E5072C7001133B0 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CE6879852E5072C7001133B0 /* AppFeature */; };
 		CE8564002E4F781A005E903E /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CE8563FF2E4F781A005E903E /* AppFeature */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		CE2730552E4F60B4000176D9 /* TestMultiModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMultiModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE27305F2E4F60B4000176D9 /* TestMultiModuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMultiModuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2730722E4F6177000176D9 /* SampleAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SampleAppPackage; sourceTree = "<group>"; };
+		CE6879772E5072B8001133B0 /* AppFeatureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFeatureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -48,6 +50,11 @@
 		CE2730622E4F60B4000176D9 /* TestMultiModuleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TestMultiModuleUITests;
+			sourceTree = "<group>";
+		};
+		CE6879782E5072B8001133B0 /* AppFeatureDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AppFeatureDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE6879742E5072B8001133B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6879862E5072C7001133B0 /* AppFeature in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +100,7 @@
 				CE2730472E4F60B2000176D9 /* TestMultiModule */,
 				CE2730582E4F60B4000176D9 /* TestMultiModuleTests */,
 				CE2730622E4F60B4000176D9 /* TestMultiModuleUITests */,
+				CE6879782E5072B8001133B0 /* AppFeatureDemo */,
 				CE8563FE2E4F781A005E903E /* Frameworks */,
 				CE2730462E4F60B2000176D9 /* Products */,
 			);
@@ -96,6 +112,7 @@
 				CE2730452E4F60B2000176D9 /* TestMultiModule.app */,
 				CE2730552E4F60B4000176D9 /* TestMultiModuleTests.xctest */,
 				CE27305F2E4F60B4000176D9 /* TestMultiModuleUITests.xctest */,
+				CE6879772E5072B8001133B0 /* AppFeatureDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +196,29 @@
 			productReference = CE27305F2E4F60B4000176D9 /* TestMultiModuleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CE6879762E5072B8001133B0 /* AppFeatureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6879842E5072BC001133B0 /* Build configuration list for PBXNativeTarget "AppFeatureDemo" */;
+			buildPhases = (
+				CE6879732E5072B8001133B0 /* Sources */,
+				CE6879742E5072B8001133B0 /* Frameworks */,
+				CE6879752E5072B8001133B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CE6879782E5072B8001133B0 /* AppFeatureDemo */,
+			);
+			name = AppFeatureDemo;
+			packageProductDependencies = (
+				CE6879852E5072C7001133B0 /* AppFeature */,
+			);
+			productName = AppFeatureDemo;
+			productReference = CE6879772E5072B8001133B0 /* AppFeatureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,6 +240,9 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = CE2730442E4F60B2000176D9;
 					};
+					CE6879762E5072B8001133B0 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 				};
 			};
 			buildConfigurationList = CE2730402E4F60B2000176D9 /* Build configuration list for PBXProject "TestMultiModule" */;
@@ -219,6 +262,7 @@
 				CE2730442E4F60B2000176D9 /* TestMultiModule */,
 				CE2730542E4F60B4000176D9 /* TestMultiModuleTests */,
 				CE27305E2E4F60B4000176D9 /* TestMultiModuleUITests */,
+				CE6879762E5072B8001133B0 /* AppFeatureDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +289,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE6879752E5072B8001133B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,6 +314,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CE27305B2E4F60B4000176D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6879732E5072B8001133B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,6 +586,62 @@
 			};
 			name = Release;
 		};
+		CE6879822E5072BC001133B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppFeatureDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugioka.AppFeatureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE6879832E5072BC001133B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppFeatureDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugioka.AppFeatureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -567,9 +681,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CE6879842E5072BC001133B0 /* Build configuration list for PBXNativeTarget "AppFeatureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6879822E5072BC001133B0 /* Debug */,
+				CE6879832E5072BC001133B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE6879852E5072C7001133B0 /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
+		};
 		CE8563FF2E4F781A005E903E /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppFeature;
